@@ -1,3 +1,46 @@
+/* h1{
+    color:darkblue
+}
+h2{
+    color: red;
+    font-size: 50px;
+}
+h3{
+    text-decoration: dashed;
+    text-transform: capitalize;
+}
+
+.alternative{
+    color: aqua;
+}
+
+#nyc{
+    color: blueviolet;
+} */
+
+/* root(*) applied to everything */
+/* *{
+    color: red;
+} */
+
+
+img{
+    width: 500px;
+    height: 500px;
+}
+
 h1{
-    
+    color: blue;
+}
+
+.h1-1{
+    color:red
+}
+
+#h1-2{
+    color: grey;
+}
+
+h1{
+    color: aqua !important;
 }

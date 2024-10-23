@@ -21,7 +21,7 @@ h3{
 /* root(*) applied to everything */
 /* *{
     color: red;
-} */
+} 
 
 
 img{
@@ -63,7 +63,18 @@ li{
     list-style: none;
 }
 
+*/
+
+html{
+    font-size: 20px;
+}
+
+p.first{
+    font-size: 2rem;
+}
+
 .first{
+    width: 200px;
     border: 2px solid blue;
     padding: 10px;
     margin: 50px;
@@ -74,3 +85,4 @@ li{
     padding: 10px;
     margin: 60px;
 }
+

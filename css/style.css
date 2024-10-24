@@ -106,7 +106,7 @@ a{
     display: none;
 }
 
-*/
+
 
 html{
     font-size: 16px;
@@ -130,7 +130,7 @@ html{
     right: 1rem;
     position: sticky;
     top: 0px; */
-
+/*
 }
 .child-two{
     background-color: #006446;
@@ -140,10 +140,44 @@ html{
     width: 2rem;
     height: 2rem;
     top: 0px;
-    left: 0px; */
+    left: 0px; 
 }
 .child-three{
     background-color: #b3b600;
     width: 5rem;
     height: 5rem;
+}
+*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+div{
+    width: 175px;
+    height: 175px;
+    /* display: inline-block; */
+}
+
+.first{
+    background-color: brown;
+    z-index: 1;
+}
+
+.second{
+    background-color: aquamarine;
+    z-index: 3;
+}
+
+.third{
+    background-color: cadetblue;
+    z-index: 10;
+}
+
+.forth{
+    background-color: darkblue;
+    z-index: 20;
 }

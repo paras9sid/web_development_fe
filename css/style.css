@@ -86,7 +86,7 @@ p.first{
     margin: 60px;
 }
 
-*/
+
 
 a{
     color: aqua;
@@ -97,11 +97,53 @@ a{
     background-color: chocolate;
 }
 .second{
-    /* display: inline; */
+    /* display: inline; 
     background-color: blueviolet;
 }
 .third{
     display: inline;
     display: inline-block;
     display: none;
+}
+
+*/
+
+html{
+    font-size: 16px;
+    height: 1000px;
+}
+
+.parent{
+    background-color: #0074d9;
+    height: 20rem;
+    margin: 1.3rem;
+}
+.child-one{
+    background-color: #85006c;
+    width: 5rem;
+    height: 5rem;
+    /* position: relative;
+    top: 1rem;
+    left: 1rem; 
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    position: sticky;
+    top: 0px; */
+
+}
+.child-two{
+    background-color: #006446;
+    width: 5rem;
+    height: 5rem;
+    /* position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 0px;
+    left: 0px; */
+}
+.child-three{
+    background-color: #b3b600;
+    width: 5rem;
+    height: 5rem;
 }

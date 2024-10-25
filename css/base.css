@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html{
@@ -10,4 +12,19 @@ img{
     width: 100px;
     height: 100px;
     margin: 15px;
+}
+
+.banner{
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+.information p{
+    font-size: calc(1rem + 1vw);
+}
+
+@media (min-width:780px){
+    .information p{
+        font-size: 2rem;
+    }
 }

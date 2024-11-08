@@ -37,3 +37,44 @@ boolean= true or false
 
 let myName = "Sidharth jain";
 console.log(myName);
+
+// string creation
+
+//1st way
+
+let firstName = "Sidharth";
+let lastName = "Jain";
+
+// using backticks `
+let longPara = `Long form content`;
+
+
+// using quotes in quotes
+
+// let random = 'It's new'; // error
+
+// single quotes inside double quotes
+
+let random2 = "It's new"; // ok
+
+// concatenation of strings
+
+let fullName = firstName + lastName;
+console.log(fullName);
+console.log(firstName+lastName);
+console.log(firstName,lastName);
+console.log(firstName+" "+lastName);
+
+// accessing characters
+
+console.log(firstName[0]);
+
+let firstNameLength = firstName.length;
+console.log(firstNameLength) // length starts from 1 , index from 0 to len-1
+
+console.log(firstName.toUpperCase());
+console.log(lastName.toLowerCase());
+
+console.log(firstName.indexOf("S"));
+
+console.log(firstName.replaceAll("h","-"));

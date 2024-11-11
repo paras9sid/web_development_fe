@@ -111,3 +111,25 @@ console.log(result3);
 // template literals - backticks -> ``
 let res = `My firstname is ${firstName} and lastname is ${lastName}.`;
 console.log(res);
+
+// Null and Undefined
+
+// Null -- asssign as it is- means nothing
+
+// undefined - not defined - no value assigned
+
+let ex= null; // Null
+let ex2; // Undefined - no value asssigned
+
+
+//loose vs strict comparison
+
+console.log(age == 25);
+console.log(age == "25");
+console.log(age === "25");
+
+console.log( typeof age);
+console.log(typeof "25");
+
+console.log(age != "25");
+console.log(age !== "25");

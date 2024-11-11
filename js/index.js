@@ -78,3 +78,36 @@ console.log(lastName.toLowerCase());
 console.log(firstName.indexOf("S"));
 
 console.log(firstName.replaceAll("h","-"));
+
+// Numbers
+
+let radius = 15;
+const pie = 3.14;
+
+let result = radius + pie;
+console.log(radius+pie);
+
+//shortahnd for +1 and -1 
+
+console.log(result++);
+console.log(result--);
+
+let area = pie*(radius**2);
+console.log(area);
+
+radius =- 10;
+console.log(radius);
+
+let random = 'XYZ';
+let resul1 = radius / random;
+console.log(resul1);
+let resul2 = radius + random; // concatenated
+console.log(resul2);
+
+// let result3 = "My radius is" + radius + " and value of PI is " + pie;
+let result3 = `My radius is ${radius} and value of PI is ${pie};`
+console.log(result3);
+
+// template literals - backticks -> ``
+let res = `My firstname is ${firstName} and lastname is ${lastName}.`;
+console.log(res);

@@ -12,35 +12,60 @@ html{
 
 .items{
     border-radius: 3px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     text-align: center;
 }
 
 .container{
     background-color: #3fc9ff;
     display: flex;
+
+    /* parent properties
     /* flex-direction: row;
-    flex-wrap: wrap; */
-    flex-flow: row wrap; /* shorthand for above 2 properties at one */
+    flex-wrap: wrap; 
+    flex-flow: row wrap; /*shorthand for above 2 properties at one 
+    /* justify-content: space-around; 
+    align-items: center;
+    height: 70vh;
+    */
+
+    /* child properties */
+
+    flex-wrap: wrap; 
+    flex-flow: row wrap; /*shorthand for above 2 properties at one  */
+    justify-content: space-around; 
+    /* align-items: center; */
+    height: 70vh;
+
 }
 
 .item1{
     background-color: #9f5f80;
+    /* by default order = 0 */
+    flex-grow: 1;
 }
 
 .item2{
     background-color: #125d98;
+    /* order: 1; */
+    flex-grow: 1;
 }
 
 .item3{
     background-color: #3c8dad;
+    height: 150px;
+    flex-grow: 6;
+    align-self: center;
 }
 
 .item4{
     background-color: #f5a962;
+    flex-grow: 1;
 }
 
 .item5{
     background-color: #bf1363;
+    /* order: -1; */
+    flex-grow: 1;
 }

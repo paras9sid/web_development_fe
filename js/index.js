@@ -133,3 +133,13 @@ console.log(typeof "25");
 
 console.log(age != "25");
 console.log(age !== "25");
+
+let year = 1987;
+console.log(typeof year);
+
+let yearString = String(year);
+console.log(yearString);
+
+let random3 = "ZYZ";
+console.log(Number(random3)); //Nan = not a number as string cant be converted to number directly
+

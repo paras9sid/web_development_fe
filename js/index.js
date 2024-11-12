@@ -143,3 +143,25 @@ console.log(yearString);
 let random3 = "ZYZ";
 console.log(Number(random3)); //Nan = not a number as string cant be converted to number directly
 
+
+// BOOLEAN & COMPARISONS
+
+let value = [true,false,"true","false"];
+console.log(value); // 4 lenght - index 0,1,2,3
+
+let email = "sid@gm.com"; 
+console.log(email.includes("sid")); // true
+
+let students = ["alex","john","deepak","tanvi"];
+console.log(students.includes("alex")); // true
+console.log(students.includes("mark")); //false
+
+console.log("comparisons of age");
+console.log(age == 25); // true
+console.log(age != 25); // false
+console.log(age != 35); // true
+console.log(age > 35); // false
+console.log(age < 30); // true
+console.log(age >= 25); // true
+console.log(age <= 20); // false
+console.log("abc" > "xyz"); // false - compare a with x forst and so on... ASCII values comparison

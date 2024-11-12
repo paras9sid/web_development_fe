@@ -165,3 +165,31 @@ console.log(age < 30); // true
 console.log(age >= 25); // true
 console.log(age <= 20); // false
 console.log("abc" > "xyz"); // false - compare a with x forst and so on... ASCII values comparison
+
+
+// ARRAYS
+
+console.log("Arrays");
+
+let it = []; // empty array
+console.log(it);
+let item = ["bread","butter", "salt","jam"]; // array of strings only
+console.log(item);
+let items = ["bread","butter", "salt","jam",10,12,[9,"all"]]; // multiple data types array
+console.log(items);
+console.log(items[0]);
+
+items[1]="pizza"; // value at 1st index changed , arrays/lists can be changed - mutable - not strings- immutable
+console.log(items);
+
+// arrays functions
+
+// let itemsJoin = items.join("-"); // dash - added between all elements 
+// let itemsJoin = items.indexOf("pizza"); // 1
+// let itemsJoin = items.indexOf("pizzaas"); // -1
+// let update = ["water","coke"];
+// let itemsJoin = items.concat(update);
+// let itemsJoin = items.push("newone");
+let itemsJoin = items.pop();
+// console.log(itemsJoin);
+console.log(items);

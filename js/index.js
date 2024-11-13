@@ -1,62 +1,31 @@
-// Control flow - loops
+// while loop
 
-// let students = ["sid","hello","satyam","sanyam"]; // global
+let students = ["sid","amit","shekhar","gautam"];
 
-// // for(let i = 0; i < 5; i++){
-// //     console.log("hello");
-// //     // console.log(i); // i = local - access inside for loop code block only
-// //     // console.log(students); // global can be accessed inside too
-// // }
-
-// // for(let i = 0;i < 5; i++){
-// //     console.log(students[i]);
-// // }
-
-// for(let i = 0; i < students.length; i++){ // length method used
-//     console.log(students[i]);
+// let count = 0; // initialization before while loop
+// while(count < 5){
+//     console.log("Hello.");
+//     count++;
 // }
 
+// while(count < students.length){
+//     console.log(students[count]);
+//     count++;
+// }
 // console.log("Out of loop!.")
 
+// do while loops
 
-// for loop - in & of keywords
+let count = 0; // initialization before do while loop
+do{ 
+    console.log(count);
+    count++;
+}while(count<5);
 
-// const students = ["sid","hello","satyam","sanyam"]; // global
+let count2 = 15; // initialization before do while loop
+do{ 
+    console.log(count2);
+    count2++;
+}while(count2<5);
 
-// for(let student of students){ // of = access elements inside array
-//     console.log(student);
-// }
-
-// for(let student in students){ // in = indexing value 0 1 2 3
-//     console.log(student);
-// }
-
-// for(let student in students){ // in = indexing value 
-//     console.log(students[student]); // will print elements now through indexing
-// }
-
-
-//dictionary
-
-const student = {
-    username: "sid",
-    age:36
-};
-
-for(let key in student){
-    console.log(key);
-}
-
-//string
-
-const username= "sidharth";
-console.log("index values");
-for(let character in username){
-    console.log(character);
-}
-console.log("elements inside");
-for(let character of username){
-    console.log(character);
-}
-
-console.log("Out of loop!.")
+console.log("out of loop!")

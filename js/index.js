@@ -1,52 +1,53 @@
-// if conditional statements
+// Operators
 
-// let score = 9;
+// Logical operators
 
-// if(score > 7){
-//     console.log("Great job!.")
-// }
+// && -AND op- both conditions have to be true
 
-// console.log("Out of loop!")
+// let password = "123456";
 
-// const students = ["shubham","sid","arti","garmia"];
-
-// if(students.length > 3){
-//     console.log("we have a class");
-// }
-
-// console.log("out of condition!")
-
-
-// let score = 9;
-
-// if(score > 7){
-//     console.log("Great job!.");
+// if( (password.length > 8) && (password.includes("@"))){
+//     console.log("strong pass.");
+// }else if((password.length >= 5) && (password.length <= 8)){
+//     console.log("Medium!");
 // }else{
-//     console.log("Repeat!");
+//     console.log("Weak.");
 // }
 
+// || OR operator- 1 condition has to be true
 
-// const loggedIn = true; // truthy value
-// const loggedIn = false; //falsy value
 
-// if(loggedIn){
-//     console.log("Welcome..")
+// let password = "123dasdadada";
+
+// if( (password.length > 8) || (password.includes("@"))){
+//     console.log("strong pass.");
+// }else if((password.length >= 5) || (password.includes("@"))){
+//     console.log("Medium!");
 // }else{
-//     console.log("Try again..")
+//     console.log("Weak.");
 // }
 
-// let signal = "red";
-// let signal = "blue";
-let signal = "green";
-// let signal = "yellow";
 
-if(signal == "red"){
-    console.log("Please stop!.")
-}else if(signal == "yellow"){
-    console.log("get ready!")
-}else if(signal == "green"){
-    console.log("Go.")
+// let password = "@dda";
+
+// if( (password.length >=12 ) || (password.length >= 8) && (password.includes("@"))){
+//     console.log("strong pass.");
+// }else if((password.length >= 5) && (password.length <= 8)){
+//     console.log("Medium!");
+// }else{
+//     console.log("Weak.");
+// }
+
+// LOGICAL NOT (!)
+
+// console.log(!true); //false- reversed the true iw false
+// console.log(!false); // true - value reversed
+
+let loggedIn = true;
+
+if(!loggedIn){
+    console.log("Welcome!");
 }else{
-    console.log("Check signal input..")
+    console.log("Out!");
 }
-console.log("Out of loop!");
+console.log("Out of cond.");

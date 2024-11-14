@@ -1,53 +1,19 @@
-// Operators
+// break and continue - keyword
 
-// Logical operators
+let ratings = [7,8,9,0,6,4,3,5];
 
-// && -AND op- both conditions have to be true
-
-// let password = "123456";
-
-// if( (password.length > 8) && (password.includes("@"))){
-//     console.log("strong pass.");
-// }else if((password.length >= 5) && (password.length <= 8)){
-//     console.log("Medium!");
-// }else{
-//     console.log("Weak.");
-// }
-
-// || OR operator- 1 condition has to be true
-
-
-// let password = "123dasdadada";
-
-// if( (password.length > 8) || (password.includes("@"))){
-//     console.log("strong pass.");
-// }else if((password.length >= 5) || (password.includes("@"))){
-//     console.log("Medium!");
-// }else{
-//     console.log("Weak.");
-// }
-
-
-// let password = "@dda";
-
-// if( (password.length >=12 ) || (password.length >= 8) && (password.includes("@"))){
-//     console.log("strong pass.");
-// }else if((password.length >= 5) && (password.length <= 8)){
-//     console.log("Medium!");
-// }else{
-//     console.log("Weak.");
-// }
-
-// LOGICAL NOT (!)
-
-// console.log(!true); //false- reversed the true iw false
-// console.log(!false); // true - value reversed
-
-let loggedIn = true;
-
-if(!loggedIn){
-    console.log("Welcome!");
-}else{
-    console.log("Out!");
+for(let i = 0; i < ratings.length; i++){
+    // console.log(ratings[i]);
+    if(ratings[i]==0){
+        console.log(`Rating: ${ratings[i]}- SKIP`);
+        continue;
+    }
+    if(ratings[i]==3){
+        console.log(`Rating: ${ratings[i]}- MUST WATCH!`);
+        break;
+    }
+    
+    console.log(`Rating: ${ratings[i]}`)
 }
-console.log("Out of cond.");
+
+// console.log("out of the loop!");

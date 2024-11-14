@@ -1,31 +1,52 @@
-// while loop
+// if conditional statements
 
-let students = ["sid","amit","shekhar","gautam"];
+// let score = 9;
 
-// let count = 0; // initialization before while loop
-// while(count < 5){
-//     console.log("Hello.");
-//     count++;
+// if(score > 7){
+//     console.log("Great job!.")
 // }
 
-// while(count < students.length){
-//     console.log(students[count]);
-//     count++;
+// console.log("Out of loop!")
+
+// const students = ["shubham","sid","arti","garmia"];
+
+// if(students.length > 3){
+//     console.log("we have a class");
 // }
-// console.log("Out of loop!.")
 
-// do while loops
+// console.log("out of condition!")
 
-let count = 0; // initialization before do while loop
-do{ 
-    console.log(count);
-    count++;
-}while(count<5);
 
-let count2 = 15; // initialization before do while loop
-do{ 
-    console.log(count2);
-    count2++;
-}while(count2<5);
+// let score = 9;
 
-console.log("out of loop!")
+// if(score > 7){
+//     console.log("Great job!.");
+// }else{
+//     console.log("Repeat!");
+// }
+
+
+// const loggedIn = true; // truthy value
+// const loggedIn = false; //falsy value
+
+// if(loggedIn){
+//     console.log("Welcome..")
+// }else{
+//     console.log("Try again..")
+// }
+
+// let signal = "red";
+// let signal = "blue";
+let signal = "green";
+// let signal = "yellow";
+
+if(signal == "red"){
+    console.log("Please stop!.")
+}else if(signal == "yellow"){
+    console.log("get ready!")
+}else if(signal == "green"){
+    console.log("Go.")
+}else{
+    console.log("Check signal input..")
+}
+console.log("Out of loop!");

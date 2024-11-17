@@ -1,19 +1,23 @@
-// break and continue - keyword
+// switch statements
 
-let ratings = [7,8,9,0,6,4,3,5];
+let rating = 13;
 
-for(let i = 0; i < ratings.length; i++){
-    // console.log(ratings[i]);
-    if(ratings[i]==0){
-        console.log(`Rating: ${ratings[i]}- SKIP`);
-        continue;
-    }
-    if(ratings[i]==3){
-        console.log(`Rating: ${ratings[i]}- MUST WATCH!`);
+switch(rating){
+    case 5:
+        console.log("Must watch!");
         break;
-    }
-    
-    console.log(`Rating: ${ratings[i]}`)
+    case 4:
+        console.log("good opt!");
+        break;
+    case 3:
+        console.log("Maybe");
+        break;
+    case 2:
+        console.log("Skip!");
+        break;
+    case 1:
+        console.log("Ignore!");
+        break;
+    default:
+        console.log("Invalid!");
 }
-
-// console.log("out of the loop!");

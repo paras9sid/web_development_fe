@@ -1,12 +1,15 @@
-// ternary operator
+// Functions in JS
 
-const user = true;
+/* expression
+function func_name(args){
+    return
+}
+    */
 
-/* ternary op syntax - with expressions
- condition ? true:false */
+// eg. - addition function 
 
-user ? console.log("true value") :  console.log("false value!");
+function addition(numOne, numTwo){
+    return numOne + numTwo;
+}
 
-
-const username = "sidharth";
-username.length >= 5 ? console.log("above 5 ") : console.log("less tahn 5");
+console.log(addition(5,4));

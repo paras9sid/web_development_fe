@@ -1,94 +1,36 @@
-// // Functions in JS
-
-// /* expression
-// function func_name(args){
-//     return
-// }
-//     */
-
-// // eg. - addition function 
-
-// // function addition(numOne, numTwo){
-// //     return numOne + numTwo;
-// // }
-
-// // console.log(addition(5,4));
-
-// // let random = 20;
-// // console.log(random); // 20
-
-// // console.log(random); //Uncaught ReferenceError: Cannot access 'random' before initialization
+// // return keyword in Functions in JS
 
 
-// // regular function
-// // function declaration/defined the function
-// // function intro(){
-// //     console.log("Welcome to the course!.");
-// // }
+// function addition(numOne, numTwo){
+//     let result = numOne + numTwo;
+//     // console.log(result); // 15
+//     //  if no consol - then none - output empty
 
-// // // calling/invoking function
-// // intro();
-
-// // function stored inside variable - made up name-variable function-defining
-// // let intro = function(){
-// //     console.log("Weclome!")
-// // };
-
-// // //calling/invoking
-// // intro();
-
-// // let random = 20; //index.js:18 Uncaught ReferenceError: Cannot access 'random' before initialization
-
-
-// // function hoisting - function/vribale can be called after before declaration
-
-// //calling/invoking - first then declaring
-// // intro();
-
-// // //decalaration later
-// // function intro(){
-// //     console.log("Welcome!")
-// // };
-
-
-
-// // args-arguments/parameters
-
-// function welcome(){ // no args
-//     console.log("Welcome"); //
+//     return result; // output empty no error
 // }
 
-// welcome("Sidharth"); // output = Welcome
+// addition(5,10); // output empty
 
-// function welcome2(name){
-//     console.log("Welcome"); // args but called string not args
-// }
+// console.log(addition(5,10)); // 15
 
-// welcome2("Sidharth"); // output = welcome
+// const value = addition(5,15); // function with args stored in variable
+// console.log(value); //20
 
-// function welcome3(name){
-//     console.log(`Welcome ${name}`); // args - called args
-// }
+// // console.log(result); // Uncaught ReferenceError: result is not defined- ibnt inside funcition - so local variable
 
-// welcome3("Sidharth"); // output = Welcome Sidharth 
+function fullName(firstName, lastName){
+    // 1
+    let result = firstName + " " + lastName;
+    // return result;
+    // without return - output -> undefined
+    console.log(result); // udnefined value - return the undefined - after Sidharth Jain from calling cunftion below - undefined will be printed
 
-
-// function addtion(numOne, numTwo){
-//     let result = (numOne + numTwo);
-//     console.log(result);
-// }
-
-// addtion(5,3); // 5 = numOne , 3 = numTwo
-
-
-// concatenate
-
-function fullName(firstName, lastName="default"){
-    console.log(`Welcome ${firstName} ${lastName}.`)
+    //2 - return in one line - no need for storing ion extra variable
+    // return firstName + " " + lastName;
 }
 
-fullName("Sidharth","Jain");
-fullName("Aasha","Bhadana");
-fullName("Aliya"); //Aliya undefined-lastName
-fullName("Aliya"); // aliya - last name - empty string by default 
-fullName("Alex","Hello"); // Alex hello - default value will not print as we are providng lastnae value already
+// let value = fullName("Sidharth", "Jain");
+// console.log(value);
+
+//2 - print in one line - no need for storing ion extra variable
+console.log(fullName("Sidharth","Jain"));

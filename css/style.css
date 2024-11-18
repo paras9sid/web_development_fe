@@ -1,57 +1,30 @@
-/* border art */
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Transition */
+
 div{
-    width: 100px;
-    height: 100px;
-    margin: 100px;
-    border: 50px solid blue;
-    background-color: blue;
-    /* border-top: 100px solid lightblue;
-    border-bottom: 100px solid limegreen;
-    border-left: 100px solid brown;
-    border-right: 100px solid red; */
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: aqua;
 
-    /* border-radius: 15px 10px 20px 50px; */
-    /* border-top-left-radius: 50px; */
-    /* border-radius: 10% 40%; */
-    /* border-radius: 10% / 40%; */
-    /* border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%; */
+    /* transition */
+    transition-property: width, height;
+    /* transition-delay: 1s; */
+    /* transition-duration: 2s; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: cubic-bezier(.19,.32,.91,.7); */
 
-    /* shapes */
-    /* border-radius: 50%; circle */
-
-    transform: rotate(45deg);
+    /* shorthand */
+    transition: background-color 100ms linear 1s, width 2s ease-in,height 2s ease-in;
 }
 
-div::after{
-    position: absolute;
-    top: -100px;
-    left: -50px;
-    content: '';
-    width: 50px;
-    height: 50px;
-    box-sizing: border-box;
-    border: 50px solid green;
-    background-color: green;
-    border-radius: 50%;
-}
-
-div::before{
-    position: absolute;
-    top: -50px;
-    left: -100px;
-    content: '';
-    width: 50px;
-    height: 50px;
-    /* margin: 50px; */
-    box-sizing: border-box;
-    border: 50px solid green;
-    background-color: green;
-    border-radius: 50%;
+div:hover{
+    width: 600px;
+    height: 500px;
+    background-color: yellow;
 }

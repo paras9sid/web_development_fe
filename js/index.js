@@ -1,36 +1,35 @@
-// // return keyword in Functions in JS
+// arrow fundtions in js
 
+let welcome = function(){
+    console.log("WElcome!")
+};
 
-// function addition(numOne, numTwo){
-//     let result = numOne + numTwo;
-//     // console.log(result); // 15
-//     //  if no consol - then none - output empty
+welcome();
 
-//     return result; // output empty no error
-// }
+// coversion into arrow function 
 
-// addition(5,10); // output empty
+let intro = () =>{
+    console.log("Arrrow")
+};
 
-// console.log(addition(5,10)); // 15
+intro();
 
-// const value = addition(5,15); // function with args stored in variable
-// console.log(value); //20
+// with args
 
-// // console.log(result); // Uncaught ReferenceError: result is not defined- ibnt inside funcition - so local variable
+let intro2 = (name)=>{
+    console.log(`Weclome ${name}`)
+};
 
-function fullName(firstName, lastName){
-    // 1
-    let result = firstName + " " + lastName;
-    // return result;
-    // without return - output -> undefined
-    console.log(result); // udnefined value - return the undefined - after Sidharth Jain from calling cunftion below - undefined will be printed
+intro2("Sidharth");
 
-    //2 - return in one line - no need for storing ion extra variable
-    // return firstName + " " + lastName;
-}
+// with return keyword and decrease the size of funtion
 
-// let value = fullName("Sidharth", "Jain");
-// console.log(value);
+let add = (numOne, numTwo) => numOne + numTwo; // in case of one line of code we can remove {} and term return
 
-//2 - print in one line - no need for storing ion extra variable
-console.log(fullName("Sidharth","Jain"));
+console.log(add(2,5));
+
+let fullName = name => `Welcome ${name}`; // no need of () for args if one 1 args
+console.log(fullName("Sidharth Jain")); 
+
+let wel = () => `Welcome`; // empty args
+console.log(wel());

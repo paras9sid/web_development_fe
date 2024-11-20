@@ -5,23 +5,39 @@ let user = {
     name: "Sidharth Jain",
     email: "abc@gm.com",
     age: 27,
-    isLoggedIn: false
+    isLoggedIn: false,
+
+    // login: function(){
+    //     // console.log("Login!");
+    //     return "Login";
+    // },
+    //with parameters
+    // login: function(nickName){
+    //     // console.log("Login!");
+    //     return `Login ${nickName}`;
+    // },
+    // logout: function(){
+    //     // console.log("Logout!");
+    //     return "Logout";
+    // }
+    login(){
+        // console.log("Login!");
+        return `Login`;
+    },
+    logout(){
+        // console.log("Logout!");
+        return "Logout";
+    }
 };
 
+// methods
+
 console.log(user);
-console.log(user.name);
-console.log(user.isLoggedIn);
+console.log(user.email);
 
-//values changed - dot notation
-user.isLoggedIn = true;
-console.log(user.isLoggedIn);
+// if sued console.log
+// user.login(); // calling function - knows as method in this way- attached with suer object
 
-//square bracketnotation
-user["name"] = "Sid";
-console.log(user["name"]);
-console.log(user.name);
+// if using return
+console.log(user.login("Sidharth"));
 
-let key = "email";
-console.log(user[key]);
-//or direct square bracket notation or pass into variable like above
-console.log(user["email"]);

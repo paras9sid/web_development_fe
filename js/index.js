@@ -1,26 +1,27 @@
-// foreach method & callback
+// object literals
 
-// let products = ["bread", "butter", "egg", "bottle"];
+let user = {
+    //key: value,
+    name: "Sidharth Jain",
+    email: "abc@gm.com",
+    age: 27,
+    isLoggedIn: false
+};
 
-//syntax = products.forEach();
+console.log(user);
+console.log(user.name);
+console.log(user.isLoggedIn);
 
-// fucntion for callback
+//values changed - dot notation
+user.isLoggedIn = true;
+console.log(user.isLoggedIn);
 
-// let callback = (product) => {console.log(`My product name is: ${product}`)};
+//square bracketnotation
+user["name"] = "Sid";
+console.log(user["name"]);
+console.log(user.name);
 
-// products.forEach(callback);
-
-
-
-// let products = ["bread", "butter", "egg", "bottle"];
-
-//passing directly 
-// products.forEach( product => console.log(`My product name is : ${product}`) ); // (args brack {} consol.elog brackets removed as one line expressions/code only)
-
-// products.forEach(product=>console.log(product.length));
-
-let students =  ["sidharth","aasha","aliya","nisha"];
-
-students.forEach((student, index)=>{
-    console.log(student, index);
-});
+let key = "email";
+console.log(user[key]);
+//or direct square bracket notation or pass into variable like above
+console.log(user["email"]);

@@ -1,40 +1,18 @@
-// this keyword
+// Math object
 
-let user = {
-    name: "Sidharth Jain",
-    email: "abc@gm.com",
-    age: 27,
-    isLoggedIn: false,
+console.log(Math);
+console.log(Math.PI);
 
-    blogs: [
-        {title:"Blog 1", numComment:5},
-        {title: "Blog 2", numComments:3},
-    ],
-    allBlogConsole(){
-        this.blogs.forEach((blog) => {console.log(blog)});
-        this.blogs.forEach(blog => console.log(blog.title));
-    },
-    login(){
-        // return `Login ${this}`; //Login [object Object]
-        // return `Login ${this.email}`; //Login abc@gm.com
-        this.isLoggedIn = true;
-        return `Logged in - ${this.isLoggedIn}`;
-    },
-    logout(){
-        // console.log("Logout!");
-        // return `Logout`;
-        this.isLoggedIn = false;
-        return `Logged out - ${this.isLoggedIn}`;
-    }
-};
+console.log(Math.E);
 
-console.log(user.login()); 
-console.log(this);
-console.log(user.logout());
+const num = 15.3; // 
+console.log(Math.round(num)); // round - 15.3 = 15 -> till 15.49 = 15 , 15.5 or > == 16
+console.log(Math.random()); // random nmber on avery load
 
-let users = [];
+console.log(Math.ceil(num)); // cieling 16 above value
+console.log(Math.floor(num)); // floor value self or less = 15
 
-console.log(user.blogs);
-console.log(user.blogs[0]);
-console.log(user.blogs[0].title);
-user.allBlogConsole();
+console.log(Math.pow(2,5)); // 2**5 2 to the power 5
+
+console.log(Math.random()*10); // random nmber on avery load
+console.log(Math.round(Math.random()*10)); // random nmber on avery load

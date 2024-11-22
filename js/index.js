@@ -1,5 +1,5 @@
-// query selector in js
+// Controlling content(Add/delete)
 
-let descrip = document.querySelector("p");
 
-descrip.forEach( para => console.log(para));
+
+console.log(document);

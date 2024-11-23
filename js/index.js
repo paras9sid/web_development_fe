@@ -1,42 +1,42 @@
-// Attribute(get/set)
-
-// const link = document.querySelector("a");
-// console.log(link);
-// old value
-// console.log(link.getAttribute('href'));
-// console.log(link.getAttribute('target')); // if target attr mentioneds
-
-//new value
-// link.setAttribute("href","www.abc.com");
-// console.log(link.getAttribute("href"));
+// // classes - add/remove
 
 
-// new attr- setting if no attribute wtih taarget mentioned already
-// link.setAttribute("target","_blank");
+// const heading = document.querySelector('h1');
+// // console.log(heading.classList);
 
-// console.log(document.querySelectorAll('.active'));
 
-// const activeClasses = document.querySelectorAll(".active");
+// // adding class
+// heading.classList.add("highlight");
 
-// activeClasses.forEach( active => {
-//     console.log(active.getAttribute("class"));
-//     active.setAttribute("class","highlight");
-//     console.log(active.getAttribute("class"));
+// // removing classes
+// heading.classList.remove("blog-heading");
+
+
+const activeClasses = document.querySelectorAll("li.active");
+// console.log(activeClasses);
+
+// 2. sequencing is important for perfect scenario
+const inActiveClasses = document.querySelectorAll("li.inactive");
+
+activeClasses.forEach( active => {
+    active.classList.remove("active");
+    active.classList.add("inactive");
+});
+
+// 1. all classes will be active with below - sequencing important
+// const inActiveClasses = document.querySelectorAll("li.inactive");
+// inActiveClasses.forEach(active => {
+//     active.classList.remove("inactive");
+//     active.classList.add("active");
 // });
 
+inActiveClasses.forEach(active => {
+    active.classList.remove("inactive");
+    active.classList.add("active");
+});
+
 const brandName = document.querySelector("#website-name");
-// brandName.setAttribute("style","color: blue;");// will overwrite all style attribute values inline wrriten code
+// brandName.classList.toggle("important");// will add , switch it on
 
-// add style component/content - change css styles
-// console.log(brandName.style);
-
-console.log(brandName.style.margin);
-brandName.style.margin= "50px";
-console.log(brandName.style.margin);
-brandName.style.color= "Red";
-
-//camelCase naming convention
-brandName.style.fontSize= "100px";
-
-
-
+// will switch it off toggle off if it is already in the element - class="important"
+brandName.classList.toggle("important");

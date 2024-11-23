@@ -1,42 +1,27 @@
-// // classes - add/remove
+// // Relationships - parent/child/sibling
+
+// const topNav = document.querySelector(".top-nav");
+// // console.log(topNav);
+// // console.log(topNav.children);
+
+// // topNav.children.forEach(element => {
+// //     console.log(child);
+// // });
+// // error from above - index.js:7 Uncaught TypeError: topNav.children.forEach is not a functio
 
 
-// const heading = document.querySelector('h1');
-// // console.log(heading.classList);
-
-
-// // adding class
-// heading.classList.add("highlight");
-
-// // removing classes
-// heading.classList.remove("blog-heading");
-
-
-const activeClasses = document.querySelectorAll("li.active");
-// console.log(activeClasses);
-
-// 2. sequencing is important for perfect scenario
-const inActiveClasses = document.querySelectorAll("li.inactive");
-
-activeClasses.forEach( active => {
-    active.classList.remove("active");
-    active.classList.add("inactive");
-});
-
-// 1. all classes will be active with below - sequencing important
-// const inActiveClasses = document.querySelectorAll("li.inactive");
-// inActiveClasses.forEach(active => {
-//     active.classList.remove("inactive");
-//     active.classList.add("active");
+// // array method to add for working
+// const topNavChildren = Array.from(topNav.children);
+// topNavChildren.forEach(element => {
+//     console.log(element);
 // });
 
-inActiveClasses.forEach(active => {
-    active.classList.remove("inactive");
-    active.classList.add("active");
-});
-
 const brandName = document.querySelector("#website-name");
-// brandName.classList.toggle("important");// will add , switch it on
+console.log(brandName.parentElement); //footer
+console.log(brandName.parentElement.parentElement); // body
+console.log(brandName.parentElement.children); // htmlcollection(2)
 
-// will switch it off toggle off if it is already in the element - class="important"
-brandName.classList.toggle("important");
+// sibling
+console.log(brandName.nextElementSibling); // ul.footer-nav
+console.log(brandName.nextElementSibling.nextSibling); // #text
+console.log(brandName.nextElementSibling.nextSibling.nextSibling); // null

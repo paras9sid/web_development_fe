@@ -1,31 +1,34 @@
-// Event bubbling / delegation
+// more Dom events
 
-const addProduct = document.querySelector("ul");
-const button = document.querySelector("button");
+// const products = document.querySelector("ul");
+// // products.addEventListener("click", (e) => {
+// products.addEventListener("copy", (e) => {
+//     // console.log(e);
+//     if(e.target.tagName == "LI"){
+//         alert(e.target.textContent);
+//     }
+// });
 
-button.addEventListener("click", ()=>{
-    const li = document.createElement("li");
-    li.textContent = "New Product";
-    addProduct.append(li);
-});
 
-addProduct.addEventListener("click", (e) => {
-    // console.log("Inside ul");
-    // console.log(e.target);
+// const products = document.querySelector("ul");
 
-    // condition--
-    // Event Delegation - attaching to parent and parent is handling
-    if(e.target.tagName == "LI"){
-        // e.target.remove();
-        console.log("UL called");
-    }
-});
+// // storing callback functionn  in const
 
-// event bubble - as multiple events called from one click on that particular element-
-    // stop propogation method
+// const copyAlert = (e) => {
+//     if(e.target.tagName == "LI"){
+//         alert(e.target.textContent);
+//     }
+// };
+// products.addEventListener("copy", copyAlert);
 
-const newLi = document.querySelector(".active");
-newLi.addEventListener("click", (e)=>{
-    e.stopPropagation(); // will stop ULcalled above event - will call own current event
-    console.log("LI called");
+const webPage = document.querySelector("body");
+// webPage.addEventListener("mousemove", (e) => {
+//     // console.log(e);
+//     console.log(e.clientX, e.clientY);
+// });
+
+// scroll mouse
+webPage.addEventListener("wheel", (e) => {
+    // console.log(e);
+    console.log(e.clientX, e.clientY);
 });

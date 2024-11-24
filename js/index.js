@@ -13,7 +13,27 @@ product.forEach( product => {
     product.addEventListener("click", (e) => {
         // console.log(e); // all properties of events we can use
         // console.log(e.target); // using and testing target property
-        console.log(e.target.textContent);
-
+        // console.log(e.target.textContent);
+        e.target.remove();// removing particular nodes
     });
 });
+
+const addProduct = document.querySelector("ul");
+const button = document.querySelector("button");
+button.addEventListener("click", (e) => {
+    // console.log(addProduct.innerHTML); // old li detais
+    // addProduct.innerHTML += "<li>new produt added in the end by default </li>"; // added new += method
+    // console.log(addProduct.innerHTML); // new ul list with new li above added
+
+    // //addon top first not end
+    // addProduct.innerHTML = "<li>new on top</li>" + addProduct.innerHTML; // only = not += X
+    // console.log(addProduct.innerHTML);
+
+    // append - prepend method
+    // append - add at the end
+    const newLi = document.createElement("li");
+    newLi.innerText = "New Product";
+    addProduct.append(newLi);
+    console.log(addProduct.innerHTML);
+});
+

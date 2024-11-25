@@ -12,23 +12,28 @@ h1 {
     text-align: center;
 }
 
-ul {
-    padding: 0px;
-}
-
-li {
-    list-style: none;
-    background-color: rgb(75, 75, 75);
-    color: #ffffff;
-    margin: 10px 0px;
-    padding: 10px;
-    border: solid 1px rgb(87, 87, 87);
-    border-radius: 5px;
-}
-
-button {
+form>* {
     display: block;
+    margin-top: 10px !important;
     margin: auto;
+}
+
+input {
+    width: 250px;
+    border: solid 1px rgb(87, 87, 87);
+    border-radius: 2px;
+    padding: 10px;
+}
+
+textarea {
+    width: 250px;
+    height: 80px;
+    border: solid 1px rgb(87, 87, 87);
+    border-radius: 2px;
+    padding: 10px;
+}
+
+#submit {
     padding: 10px;
     background-color: rgb(0, 163, 76);
     color: #ffffff;
@@ -36,6 +41,6 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+#submit:hover {
     cursor: pointer;
 }

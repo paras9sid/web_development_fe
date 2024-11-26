@@ -14,15 +14,17 @@
 <body>
     <div class="container">
         <h1>Customer Feedback</h1>
-        <form class="feedback-form">
-            <input type="text" id="username" placeholder="Username" autocomplete="off">
-            <textarea id="feedback" placeholder="Feedback" autocomplete="off"></textarea>
+        <form onSubmit="displayData(event)" class="feedback-form">
+            <input onKeyup="usernameValidation(event)" type="text" id="username" placeholder="Username" autocomplete="off">
+            <textarea onKeyup="feedbackValidation(event)" id="feedback" placeholder="Feedback" autocomplete="off"></textarea>
             <input type="submit" id="submit" value="Submit">
         </form>
-        <p></p>
+        <p onClick="changeText(event)">Random</p>
     </div>
     
-    <script src="../js/index.js"></script>
+    <!-- <script src="../js/index.js"></script> -->
+    <script src="../js/script.js"></script>
+
 </body>
 
 </html>

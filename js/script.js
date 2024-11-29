@@ -1,37 +1,44 @@
-// array - map method
+// array - reduce method
 
-const numbers = [10, 20, 30, 40, 50];
+// const numbers = [1,2,3,4,5];
 
-// const mappedNum = numbers.map( number => number * 5 );
+// const reduceNumber = numbers.reduce((total, current) => {
+//     total += current;
+//     return total;
+// }, 0);
 
-const mappedNum = numbers.map( number => {
-    if(number > 30){
-        return number + 5;
-    }else{
-        return number;
-    }
-});
+// console.log(reduceNumber);
 
-// console.log(mappedNum);
+// const numbers = [1,2,3,4,5];
 
-const products = [
-    {name: "Breed", price:25, tax:0.05},
-    {name: "Breed", price:65, tax:0.05},
-    {name: "Breed", price:15, tax:0},
-    {name: "Breed", price:125, tax:0.18},
+// const reduceNum = numbers.reduce((total, current)=>{
+//     total *= current;
+//     return total;
+// },1);
+
+// console.log(reduceNum);
+
+const students = [
+    {name: "Shubham", marks: 9}, 
+    {name: "Alex", marks: 7}, 
+    {name: "John", marks: 6},
+    {name: "Shubham", marks: 7}, 
+    {name: "Alex", marks: 9}, 
+    {name: "John", marks: 10},
+    {name: "Shubham", marks: 10}, 
+    {name: "Alex", marks: 8}, 
+    {name: "John", marks: 9},
 ];
 
-const mappedProducts = products.map((product)=>{
-    // return product.price * product.tax;
-    console.log(product.price + product.price * product.tax);
+const reduceStudents = students.reduce( (total, current) => {
+    // if(current.name === 'Shubham'){
+    //     total = total + current.marks; 
+    // }
+    // return total; // 26
+    if(current.name === 'ABC'){ // name not exist in objects .name list - 
+        total = total + current.marks; 
+    }
+    return total; // 0
+}, 0);
 
-    // new price updated consition
-    const newPrice = product.price + product.price * product.tax;
-    //returning object itself
-    // old price
-    // return {name: product.name, price: product.price, tax: product.tax};
-
-    // new price updated with tax
-    return {name: product.name, price: newPrice, tax: `tax applied : ${product.tax}`};
-});
-console.log(mappedProducts);
+console.log(reduceStudents);

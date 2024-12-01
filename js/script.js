@@ -1,44 +1,67 @@
-// array - reduce method
+// array - finc method
 
-// const numbers = [1,2,3,4,5];
+const numbers = [5, 20, 75, 80, 15, 30];
 
-// const reduceNumber = numbers.reduce((total, current) => {
-//     total += current;
-//     return total;
-// }, 0);
+const findNumbers = numbers.find( num => num > 70 ); 
 
-// console.log(reduceNumber);
+console.log(findNumbers);
 
-// const numbers = [1,2,3,4,5];
 
-// const reduceNum = numbers.reduce((total, current)=>{
-//     total *= current;
-//     return total;
-// },1);
+// sort method 
 
-// console.log(reduceNum);
+const sortNumbers = numbers.sort();
+console.log(sortNumbers); // printing as per first number comparison
 
-const students = [
-    {name: "Shubham", marks: 9}, 
-    {name: "Alex", marks: 7}, 
-    {name: "John", marks: 6},
-    {name: "Shubham", marks: 7}, 
-    {name: "Alex", marks: 9}, 
-    {name: "John", marks: 10},
-    {name: "Shubham", marks: 10}, 
-    {name: "Alex", marks: 8}, 
-    {name: "John", marks: 9},
+const names = ["sid", "ake", "deep"];
+console.log(names.sort()); // prinitng by comparing first alphabet of every word - a , d , s
+
+// custom function - compare()
+numbers.sort((a, b)=>{ // will comapre 1st two elements then movie on with indexes 0,1 1st , 1,2 second and so on
+    // return a-b; // lower to higher
+    return b-a; // higher to lower
+});
+console.log(numbers);
+
+const movies = [
+    {name:"bug", rating: 10},
+    {name:"bug2", rating: 7},
+    {name:"bug3", rating: 9},
+    {name:"bug4", rating: 8},
 ];
 
-const reduceStudents = students.reduce( (total, current) => {
-    // if(current.name === 'Shubham'){
-    //     total = total + current.marks; 
-    // }
-    // return total; // 26
-    if(current.name === 'ABC'){ // name not exist in objects .name list - 
-        total = total + current.marks; 
-    }
-    return total; // 0
-}, 0);
+// movies.sort();
+// console.log(movies); // same as it is
 
-console.log(reduceStudents);
+movies.sort((a, b)=>{
+    return a.rating - b.rating; // lower to higer
+    // return b.rating - a.rating; // higher to lower
+});
+
+console.log(movies); 
+
+// reverse method
+
+const num1 = [10,4,5,2,3,80];
+// num1.reverse();
+// console.log(num1);
+num1.sort();
+num1.reverse();
+console.log(num1);
+// console.log(movies.reverse());
+
+
+
+// chaining method
+
+const num2 = [70, 50, 90, 80, 35];
+
+const filterNumbers = num2.filter(num => num > 75 );
+const mapNum = filterNumbers.map(num => num + 5 );
+
+console.log(mapNum);
+
+
+// directly applying map on filter - 2 method in one line - chaining
+const result = num2.filter(num => num > 75).map(num => num + 5);
+console.log(result);
+
